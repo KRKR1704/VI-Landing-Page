@@ -1,0 +1,105 @@
+.card{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 50px;
+    border: 0;
+    margin:30px auto;
+    width: 60%;
+    background-color: #f7f7f7 ;
+    border-radius: 16px;
+}
+#heading{
+    font-family: 'Vi-Bold';
+    font-size: 25px;
+    text-align: left;
+}
+#para{
+    font-family: 'Vi-Medium';
+    width: 70%;
+    font-size: 15px;
+}
+.slidercont{
+    background-color: #f7f7f7;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    margin: 0;
+}
+.hidden {
+    display: none;
+}
+
+.slider {
+    text-align: center;
+}
+
+.slider-dot {
+    display: inline-block;
+    width: 8px;
+    height: 3px;
+    background-color: #d3d3d7;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.slider-dot.active {
+    background-color: #646473;
+    width: 20px;
+    border-radius: 100px;
+}
+
+.hover-button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border-color: gray;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hover-button:hover {
+    background-color: #2f3043;
+    color: white;
+}
+.btn-active {
+    background-color: black !important;
+    color: white !important;
+}
+.btn{
+    margin:30px auto;
+    margin-bottom: -1%;
+    width: 65%;
+}
+.scardimg{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .card{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 50px;
+        border: 0;
+        margin:30px auto;
+        width: 60%;
+        background-color: #f7f7f7 ;
+        border-radius: 16px;
+    }
+    .btn{
+        display: none;
+    }
+    .cardimg{
+        display: none;
+    }
+    .scardimg{
+        display: block;
+        width: 110%;
+        margin-left: -5%;
+    }
+    #para{
+        width: 90%;
+    }
+}

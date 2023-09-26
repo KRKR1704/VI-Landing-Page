@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bfoot1.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="datab.css">
+    <link rel="stylesheet" href="buysim.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="bonus.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="navup.css">
+    <script src="https://kit.fontawesome.com/02cac201ee.js" crossorigin="anonymous"></script>
+    <title>VI WEBSITE</title>
+    <style>
+        @font-face {
+            font-family: 'Vi-Bold';
+            src: url(fonts/Vi-Bold.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Vi-Heavy';
+            src: url(fonts/Vi-Heavy.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Vi-Medium';
+            src: url(fonts/Vi-Medium.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Vi-Regular';
+            src: url(fonts/Vi-Regular.ttf) format('truetype');
+        }
+    </style>
+</head>
+<body>
+    <!-- first navbar large -->
+    <div class="fnavbarlg">
+        <div class="fcontainer">
+          <a class="fitem" href="hello">Get the app</a>
+          <a class="fitem" href="https://www.google.com">Business</a>
+          <a class="fitem" href="#">help</a>
+        </div>
+    </div>
+
+    <!-- nav main -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532732/group-6-copy_osf6jx.svg"/>
+        </div>
+        <div class="hamburger-icon">&#9776;</div>
+        <div class="hamburger-menu">
+            <ul>
+                <li class="dropup">
+                    <a href="#">Recharge <span class="arr">&#x25BC;</span></a>
+                    <div class="dropup-content">
+                        <a href="#">Item 1</a>
+                        <a href="#">Item 2</a>
+                        <a href="#">Item 3</a>
+                    </div>
+                </li>
+                <li class="dropup">
+                    <a href="#">Pay Bill <span class="arr">&#x25BC;</span></a>
+                    <div class="dropup-content">
+                        <a href="#">Item 1</a>
+                        <a href="#">Item 2</a>
+                        <a href="#">Item 3</a>
+                    </div>
+                </li>
+                <li class="dropup">
+                    <a href="#">New Connection <span class="arr">&#x25BC;</span></a>
+                    <div class="dropup-content">
+                        <a href="#">Item 1</a>
+                        <a href="#">Item 2</a>
+                        <a href="#">Item 3</a>
+                    </div>
+                </li>
+                <li class="dropup">
+                    <a href="#">International Roaming <span class="arr">&#x25BC;</span></a>
+                    <div class="dropup-content">
+                        <a href="#">Item 1</a>
+                        <a href="#">Item 2</a>
+                        <a href="#">Item 3</a>
+                    </div>
+                </li>
+                <li class="dropup">
+                    <a href="#">Explore <span class="arr">&#x25BC;</span></a>
+                    <div class="dropup-content">
+                        <a href="#">Item 1</a>
+                        <a href="#">Item 2</a>
+                        <a href="#">Item 3</a>
+                    </div>
+                </li>
+                <li>
+                    <a id="esgn" href="sign in" >Sign In</a>
+    
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        var dropdowns = document.querySelectorAll('.dropup');
+        var openDropdown = null;
+        var navbar = document.querySelector('.navbar');
+        var hamburgerIcon = document.querySelector('.hamburger-icon');
+        var hamburgerMenu = document.querySelector('.hamburger-menu');
+    
+        dropdowns.forEach(function(dropdown) {
+            var button = dropdown.querySelector('a');
+            var content = dropdown.querySelector('.dropup-content');
+    
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                if (openDropdown && openDropdown !== content) {
+                    openDropdown.classList.remove('active');
+                }
+                content.classList.toggle('active');
+                openDropdown = content;
+            });
+        });
+    
+        hamburgerIcon.addEventListener('click', function() {
+            navbar.classList.toggle('active');
+            hamburgerMenu.classList.toggle('active');
+        });
+    
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.navbar')) {
+                dropdowns.forEach(function(dropdown) {
+                    var content = dropdown.querySelector('.dropup-content');
+                    content.classList.remove('active');
+                });
+                navbar.classList.remove('active');
+                hamburgerMenu.classList.remove('active');
+            }
+        });
+    </script>
+
+
+    <!-- bonus data -->
+    <div class="bcontainer">
+        <h1>Vi bonus data benefits</h1>
+        <p>Get benefits like night free data, weekend data rollover, and double data<br>benefits with unlimited daily data recharge of ₹249 and above</p>
+      </div>
+
+    <!-- slider -->
+    <div class="btn">
+        <button class="hover-button" id="showDiv1">Vi Unlimited</button>
+        <button class="hover-button" id="showDiv2">Weekend Data Rollover</button>
+        <button class="hover-button" id="showDiv3">Double Data</button>
+        <button class="hover-button" id="showDiv4">Night Data</button>
+    </div>
+    <div class="card" id="div1">
+        <div class="text">
+            <p id="heading">unlimited Vi data benefits</p>
+            <p id="para">
+                Never have to worry about the data shortage,
+                deal with work from home, binge watch your
+                favourite series, or remain updated with high
+                speed internet with Vi.
+            </p>
+        </div>
+        <div class="cardimage">
+            <img class="cardimg" src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/ul-website-banner-448-x-252-2-01_zisy3k.png"/>
+            <img class="scardimg" src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532734/ul-website-banner-448-x-252-2-01_2x_icw6nr.png"/>
+        </div>
+    </div>
+
+    <div>
+        <div class="card hidden" id="div2">
+            <div class="text">
+                <p id="heading">weekend data rollover</p>
+                <p id="para">
+                    Weekend Roll over is a data saver functionality
+                    wherein unused daily data quota from the
+                    weekdays is accumulated and is made available
+                    for use only on the weekends. i.e. Saturday &
+                    Sunday.
+                </p>
+            </div>
+            <div class="cardimage">
+                <img class="cardimg" src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532734/ul-website-banner-448-x-252-2-08_k7pzpk.webp"/>
+                <img class="scardimg" src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532734/ul-website-banner-448-x-252-2-08_k7pzpk.webp"/>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card hidden" id="div3">
+        <div class="text">
+            <p id="heading">Double Data</p>
+            <p id="para">
+                Two is better than one and double
+                data is better than data limit has
+                reached. Double your data benefits
+                with Vi double data offers, enjoy 4GB
+                data everyday.
+            </p>
+        </div>
+        <div class="cardimage">
+            <img class="cardimg" src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/ul-website-banner-448-x-252-2-01_zisy3k.png"/>
+            <img class="scardimg" src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532734/ul-website-banner-448-x-252-2-01_2x_icw6nr.png"/>
+
+        </div>
+    </div>
+
+    <div>
+        <div class="card hidden" id="div4">
+            <div class="text">
+                <p id="heading">Night Data</p>
+                <p id="para">
+                    Weekend Roll over is a data saver functionality
+                    wherein unused daily data quota from the
+                    weekdays is accumulated and is made available
+                    for use only on the weekends. i.e. Saturday &
+                    Sunday.
+                </p>
+            </div>
+            <div class="cardimage">
+                <img class="cardimg" src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532734/ul-website-banner-448-x-252-2-08_k7pzpk.webp"/>
+                <img class="scardimg" src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532734/ul-website-banner-448-x-252-2-08_k7pzpk.webp"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider">
+        <span class="slider-dot active" id="dot1"></span>
+        <span class="slider-dot" id="dot2"></span>
+        <span class="slider-dot" id="dot3"></span>
+        <span class="slider-dot" id="dot4"></span>
+    </div>
+    <script>
+        const divButtons = [
+            document.getElementById("showDiv1"),
+            document.getElementById("showDiv2"),
+            document.getElementById("showDiv3"),
+            document.getElementById("showDiv4"),
+        ];
+
+        const divs = [
+            document.getElementById("div1"),
+            document.getElementById("div2"),
+            document.getElementById("div3"),
+            document.getElementById("div4"),
+        ];
+
+        const dots = [
+            document.getElementById("dot1"),
+            document.getElementById("dot2"),
+            document.getElementById("dot3"),
+            document.getElementById("dot4"),
+        ];
+
+        let activeButtonIndex = 0;
+        let touchStartX = 0;
+        let touchEndX = 0;
+        function showDiv(index) {
+            divs.forEach((div, i) => {
+                if (i === index) {
+                    div.style.display = "flex";
+                    setActiveDot(dots[index]);
+                } else {
+                    div.style.display = "none";
+                }
+            });
+        }
+
+        function setActiveDot(dot) {
+            dots.forEach(d => {
+                if (d === dot) {
+                    d.classList.add("active");
+                } else {
+                    d.classList.remove("active");
+                }
+            });
+        }
+        function toggleButtonColor(index, isActive) {
+            const button = divButtons[index];
+            if (isActive) {
+                button.classList.add("btn-active");
+            } else {
+                button.classList.remove("btn-active");
+            }
+        }
+
+        divButtons.forEach((button, index) => {
+            button.addEventListener("click", () => {
+                toggleButtonColor(activeButtonIndex, false);
+                activeButtonIndex = index;
+                toggleButtonColor(activeButtonIndex, true);
+                showDiv(index);
+            });
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+                toggleButtonColor(activeButtonIndex, false);
+                activeButtonIndex = index;
+                toggleButtonColor(activeButtonIndex, true);
+                showDiv(index);
+            });
+        });
+
+        document.addEventListener("touchstart", (event) => {
+            touchStartX = event.touches[0].clientX;
+        });
+
+        document.addEventListener("touchend", (event) => {
+            touchEndX = event.changedTouches[0].clientX;
+            const deltaX = touchStartX - touchEndX;
+            const sensitivity = 50;
+
+            if (deltaX > sensitivity && activeButtonIndex < divButtons.length - 1) {
+                toggleButtonColor(activeButtonIndex, false);
+                activeButtonIndex++;
+                toggleButtonColor(activeButtonIndex, true);
+                showDiv(activeButtonIndex);
+            } else if (deltaX < -sensitivity && activeButtonIndex > 0) {
+                toggleButtonColor(activeButtonIndex, false);
+                activeButtonIndex--;
+                toggleButtonColor(activeButtonIndex, true);
+                showDiv(activeButtonIndex);
+            }
+        });
+
+        showDiv(0);
+        toggleButtonColor(0, true);
+    </script>
+
+    <!-- buy sim -->
+    <div class="sim">
+        <div >
+            <img class="simg" src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/group-50_ylzbou.svg">
+        </div>
+        <div class="rjoin">
+            <p>Still finding a reason to join the Vi network? join now!</p>
+        </div>
+        <div class="obuysim">
+            <button  class="buysim">
+                buy sim
+            </button>
+        </div>
+    </div>
+
+    <!-- package with data benefits -->
+    <!-- 1st -->
+    <p id="head">Pack with data benefits</p>
+    <div id="one1" class="outer">
+      
+      <div class="om">
+        <div class="outer2">
+          <div class="inner1">
+            <span class="ybg">Double data - 4 GB/day</span>
+          </div>
+          <div class="inner2">
+            <div>
+              <a id="alink" href="hello">Pack Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="first">
+          <div class="first_one">
+            <div class="mt-3">₹249</div>
+          </div>
+          <div class="second">
+            <div class="second_one">
+              <div class="sec">
+                <span class="one">Truly unlimited</span> <span class="sone">calls</span>
+              </div>
+              <div class="sec">
+                <span class="one">1.5GB/day</span> <span class="sone">Data</span>
+              </div>
+              <div class="sec">
+                <span class="one">28 Days</span> <span class="sone">Validity</span>
+              </div>
+            </div>
+            <div class="images">
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532732/group_mbq9e9.svg" />
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/group-19-copy-3_nmytko.png" />
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/group-19-copy-3_nmytko.png" />
+              </div>
+            </div>
+            <div class="images1">
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532732/group_mbq9e9.svg" />
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/group-19-copy-3_nmytko.png" />
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/group-19-copy-3_nmytko.png" />
+              </div>
+            </div>
+          </div>
+          <div class="third">
+            <button class="button1">Buy Pack</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2nd -->
+    <div id="two2" class="outer">
+      <div class="om">
+        <div class="outer2">
+          <div class="inner1">
+            <span class="ybg">Double data - 4 GB/day</span>
+          </div>
+          <div class="inner2">
+            <div>
+              <a id="alink" href="hello">Pack Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="first">
+          <div class="first_one">
+            <div class="mt-3">₹249</div>
+          </div>
+          <div class="second">
+            <div class="second_one">
+              <div class="sec">
+                <span class="one">Truly unlimited</span> <span class="sone">calls</span>
+              </div>
+              <div class="sec">
+                <span class="one">1.5GB/day</span> <span class="sone">Data</span>
+              </div>
+              <div class="sec">
+                <span class="one">28 Days</span> <span class="sone">Validity</span>
+              </div>
+            </div>
+            <div class="images">
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532732/group_mbq9e9.svg" />
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/group-19-copy-3_nmytko.png" />
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/group-19-copy-3_nmytko.png" />
+              </div>
+            </div>
+            <div class="images1">
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532732/group_mbq9e9.svg" />
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/group-19-copy-3_nmytko.png" />
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/group-19-copy-3_nmytko.png" />
+              </div>
+            </div>
+          </div>
+          <div class="third">
+            <button class="button1">Buy Pack</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3rd -->
+    <div id="three3" class="outer">
+      <div class="om">
+        <div class="outer2">
+          <div class="inner1">
+            <span class="ybg">Double data - 4 GB/day</span>
+          </div>
+          <div class="inner2">
+            <div>
+              <a id="alink" href="hello">Pack Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="first">
+          <div class="first_one">
+            <div class="mt-3">₹249</div>
+          </div>
+          <div class="second">
+            <div class="second_one">
+              <div class="sec">
+                <span class="one">Truly unlimited</span> <span class="sone">calls</span>
+              </div>
+              <div class="sec">
+                <span class="one">1.5GB/day</span> <span class="sone">Data</span>
+              </div>
+              <div class="sec">
+                <span class="one">28 Days</span> <span class="sone">Validity</span>
+              </div>
+            </div>
+            <div class="images">
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532732/group_mbq9e9.svg" />
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/group-19-copy-3_nmytko.png" />
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/group-19-copy-3_nmytko.png" />
+              </div>
+            </div>
+            <div class="images1">
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532732/group_mbq9e9.svg" />
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/group-19-copy-3_nmytko.png" />
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/group-19-copy-3_nmytko.png" />
+              </div>
+            </div>
+          </div>
+          <div class="third">
+            <button class="button1">Buy Pack</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4th -->
+    <div id="four4" class="outer">
+      <div class="om">
+        <div class="outer2">
+          <div class="inner1">
+            <span class="ybg">Double data - 4 GB/day</span>
+          </div>
+          <div class="inner2">
+            <div>
+              <a id="alink" href="hello">Pack Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="first">
+          <div class="first_one">
+            <div class="mt-3">₹249</div>
+          </div>
+          <div class="second">
+            <div class="second_one">
+              <div class="sec">
+                <span class="one">Truly unlimited</span> <span class="sone">calls</span>
+              </div>
+              <div class="sec">
+                <span class="one">1.5GB/day</span> <span class="sone">Data</span>
+              </div>
+              <div class="sec">
+                <span class="one">28 Days</span> <span class="sone">Validity</span>
+              </div>
+            </div>
+            <div class="images">
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532732/group_mbq9e9.svg" />
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/group-19-copy-3_nmytko.png" />
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/group-19-copy-3_nmytko.png" />
+              </div>
+            </div>
+            <div class="images1">
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532732/group_mbq9e9.svg" />
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/group-19-copy-3_nmytko.png" />
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532733/group-19-copy-3_nmytko.png" />
+              </div>
+            </div>
+          </div>
+          <div class="third">
+            <button class="button1">Buy Pack</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- frequently asked questions -->
+    <div id="ques0">
+        <div id="ques1">
+          <h3>Frequently Asked Questions</h3>
+        </div>
+        <div id="ques2">
+          <p>How many times can I get this offer?</p>
+          <hr id="linehr" />
+          <p>I have done the recharge but I am not eligible. What now?</p>
+          <hr id="linehr" />
+          <p>I am a postpaid customer, what to do?</p>
+          <hr id="linehr" />
+          <p>How can I avail this benefit?</p>
+          <hr id="linehr" />
+          <p>How many times can I get this offer?</p>
+          <hr id="linehr" />
+        </div>
+        <div>
+          <button id="ques3">See More</button>
+        </div>
+      </div>
+
+    <!-- before footer -->
+        <!-- before footer -->
+    <div class="outercont">
+        <div class="container">
+            <!-- first -->
+        <div class="mainsub">
+            <img id="simg" 
+                src="https://res.cloudinary.com/dxn0shbpg/image/upload/v1694532732/group-6-copy_osf6jx.svg" />
+            <b>
+                <p id="vil">vodafone idea limited</p>
+            </b>
+            <div>
+                <p id="vipara">
+                    Vodafone Idea Limited is an Aditya Birla Group
+                    and Vodafone Group partnership. It is India's
+                    leading telecom service provider. The Company
+                    provides pan India Voice and Data services
+                    across 2G, 3G and 4G platform.
+                </p>
+            </div>
+            <div class="icons">
+                <p><i class="fa-brands fa-facebook fa-2xl"></i> </p>
+                <p><i class="fa-brands fa-square-instagram fa-2xl"></i></p>
+                <p><i class="fa-brands fa-x-twitter fa-2xl"></i></p>
+                <p><i class="fa-brands fa-youtube fa-2xl"></i></p>
+                <p><i class="fa-brands fa-linkedin fa-2xl"></i></p>
+            </div>
+        </div>
+        <div class="element">
+            <p class="head">quick acess</p>
+            <div class="dropdown-content">
+                <div class="dropdown-item">Online Recharge</div>
+                <div class="dropdown-item">Pay Bill Online</div>
+                <div class="dropdown-item">Service Validity Packs</div>
+                <div class="dropdown-item">UPI Recharge</div>
+                <div class="dropdown-item">Dongles & Mobile Wifi</div>
+                <div class="dropdown-item">Network Troubleshooting</div>
+                <div class="dropdown-item">Security Awarness</div>
+                <div class="dropdown-item">DND Complaints</div>
+                <div class="dropdown-item">DND Registration</div>
+                <div class="dropdown-item">Value Added Services</div>
+                <div class="dropdown-item">Go Green</div>
+                <div class="dropdown-item">Short Code & USSD info</div>
+            </div>
+        </div>
+
+        <div class="element">
+            <p class="head">more from vadafone</p>
+            <div class="dropdown-content">
+                <div class="dropdown-item">Postpaid Connection</div>
+                <div class="dropdown-item">Prepaid Connection</div>
+                <div class="dropdown-item">Vadafone play</div>
+                <div class="dropdown-item">Netflix & Samsung Offer</div>
+                <div class="dropdown-item">Voice Assistant</div>
+                <div class="dropdown-item">Amazon Prime Membership Offer</div>
+                <div class="dropdown-item">Caller Tune App</div>
+                <div class="dropdown-item">MNP</div>
+                <div class="dropdown-item">Fancy Mobile Number</div>
+                <div class="dropdown-item">Home Broadband</div>
+                <div class="dropdown-item">Activate Services</div>
+            </div>
+        </div>
+
+        <div class="element">
+            <p class="head">about vodafone idea</p>
+            <div class="dropdown-content">
+                <div class="dropdown-item">About us</div>
+                <div class="dropdown-item">Carrer</div>
+                <div class="dropdown-item">Vadafone Foundation</div>
+                <div class="dropdown-item">News & Media</div>
+                <div class="dropdown-item">Vadafone Idea Corp Website</div>
+                <div class="dropdown-item">Vadafone Group</div>
+                <div class="dropdown-item">Supernet 4G</div>
+                <div class="dropdown-item">Supernet Vol LTE</div>
+                <div class="dropdown-item">Future Jobs Finder</div>
+                <div class="dropdown-item">Blog</div>
+            </div>
+        </div>
+
+        <div class="element">
+            <p class="head">regulatory</p>
+            <div class="dropdown-content">
+                <div class="dropdown-item">Telemarketing Registration</div>
+                <div class="dropdown-item">Privacy Policy</div>
+                <div class="dropdown-item">Terms of Service</div>
+                <div class="dropdown-item">Notices</div>
+                <div class="dropdown-item">Prepaid TRAI mandate</div>
+                <div class="dropdown-item">Postpaid TRAI mandate</div>
+                <div class="dropdown-item">First Recharge Plans</div>
+                <div class="dropdown-item">Warning & Fraudulent</div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Small screen icons -->
+        <div class="sicons">
+          <p><i class="fa-brands fa-facebook fa-2xl"></i> </p>
+          <p><i class="fa-brands fa-square-instagram fa-2xl"></i></p>
+          <p><i class="fa-brands fa-x-twitter fa-2xl"></i></p>
+          <p><i class="fa-brands fa-youtube fa-2xl"></i></p>
+          <p><i class="fa-brands fa-linkedin fa-2xl"></i></p>
+        </div>
+    </div>
+    
+    <script>
+        const elements = document.querySelectorAll('.element');
+
+        elements.forEach(element => {
+            element.addEventListener('click', () => {
+                element.classList.toggle('active');
+            });
+        });
+    </script>
+
+
+    <!-- footer -->
+    <div class="lfoot">
+        <p>
+          This website uses own third-party cookies. Find out more about usage in our Privacy Policy page. Copyright Reserved with Vodafone Idea Limited (formerly Idea Cellular Limited).
+          <br />
+          Vodafone Idea Limited (Formerly Idea Cellular Limited), An Aditya Birla Group & Vodafone partnership, Suman Towers, Plot No.18, Sector 11. Gandhinagar - 382011, Gujarat. CIN L32100GJ1996PLC030976, T: +91-79 66714000, F: +91-79 2323 2251
+        </p>
+      </div>
+</body>
+</html>

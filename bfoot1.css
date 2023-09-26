@@ -1,0 +1,143 @@
+.container {
+    max-width: 800px;
+}
+
+.icons{
+    display: none;
+}
+
+.sicons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    margin: 30px;
+}
+
+.element {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition-duration: 300;
+}
+
+.element.active .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.dropdown-content {
+    display: none;
+    padding: 10px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform-origin: top;
+    
+}
+
+.head{
+    font-family: 'Vi-Bold';
+    font-size: 20px;
+}
+
+#vipara{
+    font-family: 'Vi-Medium';
+}
+
+.dropdown-item {
+    margin: 5px 0;
+    font-family: 'Vi-Medium';
+    font-size: 16px;
+}
+
+
+#vil{
+    font-family: 'Vi-Bold';
+    font-size: 20px;
+}
+
+#simg{
+    
+    padding-top: 20px;
+}
+
+.outercont{
+    background-color: #fdf8f0;
+    padding: 5%;
+}
+body{
+    margin: 0;
+}
+@media screen and (min-width: 450px) {
+    .outercont{
+        display: flex;
+        flex-direction: row;
+    padding: 0%;
+        
+    }
+
+    .element {
+        width: auto;
+        display: inline-block;
+        margin-right: 20px;
+        border-bottom: none;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .sicons{
+        display: none;
+    }
+
+    .dropdown-content {
+        display: block;
+    }
+
+    .element.active .dropdown-content {
+        display: block;
+    }
+}
+@media screen and (min-width:1024px) {
+    .container{
+        display: flex;
+        max-width: 100%;
+        font-size: 12px;
+        padding-left: 5%;
+        padding-top: 5%;
+    }
+    .mainsub{
+      
+       
+        padding-right: 5%;
+    }
+    .element {
+        flex-basis: 15%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        
+    }
+    .dropdown-content{
+        padding: 0px;
+    }
+    
+    .head{
+        padding-bottom: 15px;
+        font-family: 'Vi-Bold';
+        font-size: 18px;
+    }
+
+    .dropdown-item{
+        font-family: 'Vi-Regular';
+        padding-bottom: 5px;
+    }
+    #vipara{
+        font-family: 'Vi-Medium';
+        font-size: 15px;
+    }
+}

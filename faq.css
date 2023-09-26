@@ -1,0 +1,48 @@
+#ques0{
+    background-color: #f1f7ff;
+    border-radius: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+#ques1{
+    font-family: 'Vi-bold';
+    font-size: xx-large;
+    text-align: center;
+}
+#ques2{
+    font-family: 'Vi-bold';
+    font-size: large;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#ques3{
+    font-family: 'Vi-Medium';
+    border-radius: 25px;
+    padding: 15px 40px;
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+    background-color: #f1f7ff;
+}
+
+#linehr{
+    color: gray;
+}
+
+@media screen and (max-width: 480px){
+    #ques0{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+    #ques1{
+        font-size: larger;
+    }
+    #ques2{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,155 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    margin:0px 120px
+}
+
+.logo {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    background-color: #f7fafe;
+    min-width: 160px;
+    z-index: 1;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.dropup-content.active {
+    display: block;
+    opacity: 1;
+    transform: scaleY(1);
+}
+#esgn{
+    color: red;
+    font-size: 20px;
+    font-family: 'Vi-Bold';
+}
+
+.dropup-content a {
+    display: block;
+    padding: 10px 16px;
+    text-align: left;
+    text-decoration: none;
+    font-family: 'Vi-Regular';
+}
+
+.hamburger-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hamburger-menu{
+    font-family: 'Vi-Medium';
+}
+.dropup{
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 650px) {
+    .navbar{
+        margin:0px 10px;
+    }
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: #f7fafe;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .navbar.active ul {
+        display: flex;
+    }
+
+    .navbar li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar button {
+        background-color: #f7fafe;
+        border: none;
+        color: white;
+        padding: 5px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 10px;
+    }
+
+    .hamburger-icon {
+        display: block;
+        color: black;
+        font-weight: 600;
+    }
+
+    .hamburger-menu {
+        display: none;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        flex-direction: column;
+    }
+
+    .hamburger-menu.active {
+        display: flex;
+    }
+
+    .hamburger-menu button {
+        margin-top: 10px;
+    }
+    body{
+        margin: 0px;
+    }
+    .dropup{
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+    }
+    .arr{
+        font-size: 16px;
+        padding-left: 20px;
+    }
+    #esgn{
+        padding-left: 10px;
+        font-size: 18px;
+    }
+}

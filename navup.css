@@ -1,0 +1,25 @@
+.fitem{
+    font-family: 'Vi-Bold';
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+.fcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: #f1f7ff;
+    padding: 15px 150px;
+    gap: 2%;
+    
+    
+}
+body{
+    margin: 0;
+}
+@media screen and (max-width: 650px){
+    .fcontainer{
+        display: none;
+    }
+    
+}

@@ -1,0 +1,32 @@
+.bcontainer{
+    margin-left: 18%;
+    margin-right: 20%;
+}
+.bcontainer h1{
+    font-weight: bold;
+    font-size: 35px;
+    padding-top: 20px;
+    font-family: 'Vi-Medium';
+}
+.bcontainer p{
+    padding-top: 17px;
+    font-size: 20px;
+    font-family: 'Vi-Medium';
+}
+
+@media screen and (max-width:480px){
+    .bcontainer{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .bcontainer h1{
+        font-weight: bold;
+        font-size: 25px;
+        padding-top: 12px;
+    }
+    .bcontainer p{
+        padding-top: 10px;
+        font-size: 20px;
+        font-family: 'Vi-Medium';
+    }
+}

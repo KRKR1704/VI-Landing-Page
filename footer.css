@@ -1,0 +1,17 @@
+.lfoot{
+    background-color:  #fcf3e7;
+    padding: 10px 100px;
+    font-family: 'Vi-Regular';
+    color: gray;
+    font-size: 10px;
+}
+body {
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .lfoot {
+        padding: 10px; 
+        font-size: 12px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,64 @@
+.sim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f7ff;
+    text-align: center;
+    gap: 20PX;
+    padding: 1%;
+}
+body {
+    margin: 0;
+}
+.rjoin{
+    font-family: 'Vi-Bold';
+    font-size: 20px;
+}
+.obuysim{
+    margin-left: 5%;
+}
+.buysim{
+    font-family: 'Vi-Medium';
+    font-size: 18px;
+    border: 0px;
+    border-radius: 25px;
+    padding: 15px 40px;
+    display: flex;
+    margin: auto;
+    background-color: red;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .sim {
+        display: flex;
+        padding: 20px 20px;
+        margin-top: 30px;
+    }
+    body {
+        margin: 0;
+    }
+    .rjoin{
+        font-family: 'Vi-Bold';
+        font-size: 12px;
+        text-align: left;
+        margin-left: -5%;
+    }
+    .simg{
+        height: 35px;
+        width: 35px;
+    }
+    
+    .buysim{
+        font-family: 'Vi-Medium';
+        font-size: 12px;
+        border: 0px;
+        border-radius: 25px;
+        padding: 10px 20px;
+        display: flex;
+        margin: auto;
+        background-color: red;
+        color: white;
+        white-space: nowrap;
+    }
+}
